@@ -1,0 +1,1666 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap');
+
+
+/*
+TODO: problemas que fui teniendo:
+-no pude cambiar de lugar los items del nav
+-el proyecto lo empecé desde una pc, dsp lo segui en una notebook y se me cambiaron los
+tamaños, osea se veía mal, no se ajustaron.
+-la imagen del home le tuve que poner dif width y height porq no me los tomaba igual
+y si le ponia border radius al 50% se veia ovalada.
+- cuando pongo la imagen del home, se ve una espacio en blanco al costado de 
+la pagina
+
+-Pregunta: como puedo hacer para que todo el body tome la misma medida y 
+quede el mismo margin a los costados y no tenga q andar ajustando contenedor por contenedor?
+le doy el widht al body?
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /*--============== NAV SECTION ========================--*/
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    width: 100%;
+}
+
+
+
+
+.container-tittle {
+    cursor: pointer;
+}
+
+
+
+
+.container-uls {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.items{
+    list-style: none;
+}
+
+
+
+.nav-a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+i {
+    font-size: 1.6rem;
+}
+
+
+.icons{
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+
+    /*--============== HOME SECTION =======================--*/
+
+
+.home-section{
+    background-color: #efe8ab;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*TODO: está muy centrado, no me sale ponerlo mas a la izquierda*/
+
+.home-text{
+    margin: 0px 115px;   
+    padding-top: 100px;
+    font-size: 1rem;
+    font-weight: 200;
+
+}
+
+
+.home-tittle{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+.span-text{
+    font-size: 5.5rem;
+    font-weight: 400;
+}
+
+
+.home-p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.home-button {
+    border: none;
+    border-radius: 2px;
+    font-size: 0.5rem;
+    background-color: #212428;
+    color: #ffff;
+    margin-top: 50px;
+    padding: 8px 20px;
+    
+}
+
+
+.home-a {
+    border: none;
+    border-radius: 2px;
+    font-size: 1rem;
+    background-color: #212428;
+    color: #ffff;
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 6px 20px;  /*TODO: no me queda igual al otro button, este parece mas grande*/
+}
+
+
+
+
+/************/
+
+.home-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.home-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-img {  
+    border: 8px solid #FFFFFF;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+
+
+    /*--============== ABOUT ME SECTION ===================--*/
+
+
+
+.about-section {
+    margin-top: 70px;
+
+}
+
+
+/*******/
+
+.about-tittle-one{
+    padding: 7px;
+    width: 8%;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background-color:#efe8ab;
+    text-align: center;
+}
+
+.about-tittle-two {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+
+/*******/
+
+.about-p {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 55px;
+
+}
+
+
+
+
+.about-tittle {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-tittle-span {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+.about-hr {
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    width: 15%;
+    outline: 2px solid #efe8ab;
+}
+
+
+
+.about-p-three {
+    width: 65%;
+}
+
+
+
+
+
+
+/********/
+
+.about-exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+
+.fondo-color{
+    position: relative;
+    bottom: 140px;
+    z-index: -10;
+    background-color: #efe8ab;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+}
+
+.about-1 {
+    font-size: 4rem;
+}
+
+
+.about-exp-p {
+    font-size: 1.4rem;
+
+}
+
+
+
+
+/*************/
+
+.about-info { 
+    display: flex;
+    margin-top: 50px;
+    width: 80%;
+    margin: 70px auto;
+}
+
+
+.about-container {
+    width: 30%;
+}
+
+
+.about-info-tittle {
+    color: #53585f;
+
+}
+
+
+.about-info-p {
+    font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+    /*--============== WHAT I DO SECTION ==================--*/
+
+
+.what-i-do-section {
+    background-color: #F8F9FA;
+    height: 680px;
+}
+
+
+/************/
+
+.i-do {
+    padding-top: 90px;
+}
+
+.i-do-tittle-one{
+    padding: 7px;
+    width: 15%;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background-color:#efe8ab;
+    text-align: center;
+}
+
+.i-do-tittle-two {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+
+
+/*****************/
+
+
+.i-do-container {
+    display: flex;
+    margin:auto;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+.i-do-text{
+    padding: 30px;
+    margin: auto;
+    line-height: 28px;
+}
+
+
+.i-do-icon {
+    font-size: 3rem;
+    color: #efe8ab;
+}
+
+
+.i-do-p {
+    padding-top: 15px;
+    color: #212428;
+}
+
+
+
+
+
+
+    /*--============== RESUME SECTION =====================--*/
+
+
+
+.resume {
+    height: 900px;
+}
+
+
+/****************/
+
+.resume-div {
+    padding: 90px 90px;
+}
+
+.resume-tittle-one{
+    padding: 7px;
+    width: 10%;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: 200;
+    background-color:#efe8ab;
+    text-align: center;
+}
+
+.resume-tittle-two {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 15px;
+    font-weight: 500;
+}
+
+
+
+
+
+/**************/
+
+/*TODO: no me quedan parejos, hay uno un poco mas abajo q otro*/
+
+.resumes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+}
+
+
+
+/**********/
+
+.resume-tittle {
+    padding-bottom:30px;
+}
+
+
+
+/******
+
+.resume-line {
+    position: absolute;
+    background-color: #efe8ab;
+    width: 5px;
+    height: 85%;
+    margin: 10px 3px;
+}
+***/
+
+
+/*********/
+
+.probando-dos {
+    padding-left: 30px;
+    margin: 40px;
+    border-left: 5px solid #efe8ab;
+}
+
+
+/*********/
+
+
+.resume-div-exp-edu {
+    padding: 10px 0px;
+    margin-left: 20px;
+}
+
+
+
+.resume-desc {
+    padding: 8px 0px;
+    color: #53585f;
+}
+
+
+
+.resume-hr {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.resume-li {
+    list-style: none;
+    color: #53585f;
+}
+
+
+
+
+
+
+
+/*****skills******/
+
+
+.column {
+    width: 100%;
+    margin: 150px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    width: 1000px;
+    
+    display: flex;
+    *flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills-two {
+    margin: auto;
+}
+
+
+
+.skills-items {
+    padding: 1.2em 0;
+
+}
+
+
+/*******/
+
+.skills-barra , .skills-barra::after {
+    *position: relative;
+    background-color: #efe8ab;
+    width: 205px;
+    height: 6px;
+}
+
+
+.skills-barra::after {
+    content: '';
+    *position: absolute;
+    *left: 165px;
+    background-color: #a5a5a5;
+    z-index: -10;
+}
+
+
+.skills-barra {
+    width: 100%;
+    
+}
+
+
+
+/**porcentajes***/
+
+
+.skills-barra--90 {
+    width: 280px;
+    background-color: #efe8ab;
+}
+
+
+.skills-barra--80 {
+    width: 240px;
+    background-color: #efe8ab;
+}
+
+
+.skills-barra--60 {
+    width: 170px;
+    background-color: #efe8ab;
+}
+
+
+.skills-barra--50 {
+    width: 180px;
+    background-color: #efe8ab;
+}
+
+
+.skills-barra--40 {
+    width: 175px;
+    background-color: #efe8ab;
+}
+
+
+
+.skills-barra--35 {
+    width: 165px;
+    background-color: #efe8ab;
+}
+
+
+
+
+
+
+
+
+/***************/
+
+
+.resume-button {
+    margin: 60px 44% ;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #212428;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+    /*--============== PROYECTS SECTION ===================--*/
+
+
+.project-section {
+    background-color: #F8F9FA;
+}
+
+
+.project-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.project-li {
+    list-style: none;
+    padding-left: 20px;
+    color: #53585f;
+}
+
+
+
+.project-line {
+    border: none;
+    margin: 0px 45%;
+    width: 2%;
+    outline: 2px solid #efe8ab;
+
+}
+
+
+/******************/
+
+.project-container {
+    width: 100%;
+    margin: 0px 7% ;
+    padding: 70px;
+}
+
+
+
+.project-img {
+    cursor: pointer;
+    margin: 4px;
+    width: 25%;
+    height: 30%;
+}
+
+
+
+
+
+    /*--============== CONTACT SECTION ====================--*/
+
+.contact-section {
+    display: flex;
+    background-color: #efe8ab;
+    height: 600px;
+}
+
+
+.contact-container {
+    width: 40%;
+    margin: 0px 12%;
+    padding-top: 50px;
+}
+
+
+
+.contact-tittle {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+
+.contact-p {
+    color: #36383b;
+}
+
+/***********/
+
+
+.contact-info {
+    padding: 5% 0px;
+}
+
+
+.contact-text {
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.contact-text- {
+    color: #36383b;
+}
+
+
+/***********/
+
+
+.contact-icons {
+    display: flex;
+}
+
+
+.contact-icons li {
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+
+.contact-icons li a {
+    color: #36383b;
+    
+}
+
+
+
+/****************/
+
+
+.contact-form {
+    padding-top: 50px;
+}
+
+.contact-form h3 {
+    font-size: 2rem;
+}
+
+
+.contact-form form {
+    padding-top: 40px;
+}
+
+
+
+
+.contact-form form .inputs {
+    background-color: transparent;
+    width: 400px;
+    border: 1px solid #36383b;
+}
+
+
+.contact-form form textarea {
+    background-color: transparent;
+}
+
+
+.contact-button {
+    padding: 13px 50px;
+    background-color: #212428;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+    /*--============== FOOTER SECTION =====================--*/
+
+
+.footer-section {
+    background-color: #212428;
+    height: 100px;
+    color: #FFFFFF;
+}
+
+
+.footer-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.footer-li {
+    list-style: none;
+    padding: 40px;
+}
+
+
+
+.footer-name {
+    color: #efe8ab;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/****************/
+
+
+
+
+
+
+
+
+/************ MEDIA QUERIES *****************/
+
+
+
+
+/* (celu, 400px) */
+@media (max-width: 450px) {
+
+
+    /****** home *******/
+    .home-section{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .items{
+        display: none;
+    }
+
+
+    .home-text{
+        font-size: 1rem;
+    }
+
+    .span-text {
+        font-size: 3rem;
+    }
+
+    .home-tittle{
+        font-size: 1rem;
+    }
+
+    .home-button {
+        padding: 5px ;
+    }
+
+    .home-a {
+        padding: 2px ;
+    }
+
+    .home-img{
+        margin-top: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-icon {
+        *outline: 1px solid blue;
+        margin-top: 200px;
+    }
+
+    .home-container{
+        flex-direction: column;
+    }
+
+
+
+
+    /*****about me**********/
+
+    .about-section {
+        margin-top: 20px;
+    }
+
+    .about-tittle-one{
+        width: 150px;
+    }
+
+    .about-tittle-two{
+        font-size: 2rem;
+    }
+
+    .about-hr{
+        width:180px;
+    }
+
+    .about-p-three {
+        width: 100%;
+    }
+
+    .about-exp {
+        margin-top: 80px;
+    }
+
+
+    .about-p{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-div-p {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .fondo-color{
+        width: 100px;
+        height: 110px;
+    }
+
+    .about-container {
+        width: 100%;
+        padding-right: 15px;
+    }
+
+
+
+
+    /***** WHAT I DO SECTION ********/
+
+    .what-i-do-section {
+        height: 1250px;
+    }
+
+    .i-do-tittle-one{
+        width: 150px;
+    }
+
+
+    .i-do-tittle-two {
+        font-size: 2rem;
+        width: 70%;
+        margin: auto;
+    }
+
+
+    .i-do-container {
+        flex-direction: column;
+    }
+
+
+    /***** RESUME SECTION ********/
+
+    .resume-tittle-one {
+        width: 150px;
+    }
+
+    .resume-tittle-two {
+        font-size: 2rem;
+        margin: auto;
+    }
+
+    .resumes{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*TODO: no me salió mover esta parte*/
+    .card{
+        display: flex;
+        flex-direction: row;
+        outline: 1px solid blue;
+        height: 300px;
+        width: 300px;
+    }
+
+    .skills{
+        outline: 1px solid rgb(255, 0, 0);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*TODO: no me salió, me quedó mal*/
+    .resume-button {
+        margin-top: 1000px;
+    }
+
+
+    /****** PORTFOLIO SECTION *********/
+
+    .resume-tittle-two {
+        font-size: 2rem;
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .project-container{
+        padding: 30px 0px;
+
+    }
+
+    .project-img-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .project-img{
+        width: 350px;
+        height: 290px;
+    }
+
+
+     /****** CONTACT SECTION *********/
+
+    .contact-section{
+        height: 120VH;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contact-tittle{
+        width: 300px;
+    }
+
+    .contact-p{
+        width: 300px;
+    }
+
+    .contact-info{
+        width: 100%;
+        text-align: center;
+        padding-left: 70px;
+    }
+
+    .contact-ul {
+        text-align: center;
+        padding: 15px 120px;
+    }
+
+    .contact-tittle-form{
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact-button{
+        width: 33%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+
+    /******* FOOTER SECTION ********/
+
+    .footer-section {
+        height: 200px;
+    }
+
+    .footer-ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-li {
+        text-align: center;
+    }
+
+    .footer-li- {
+        width: 400px;
+        list-style: none;
+        text-align: center;
+    }
+
+}
+
+
+
+
+/*  (tablet, 600px ) */
+@media  (min-width: 451px) and (max-width:650px) {
+    
+    
+        /****** home *******/
+        .home-section{
+            flex-direction: column;
+            height: 100vh;
+        }
+    
+        .items{
+            display: none;
+        }
+    
+    
+        .home-text{
+            font-size: 1rem;
+        }
+    
+        .span-text {
+            font-size: 3rem;
+        }
+    
+        .home-tittle{
+            font-size: 1rem;
+        }
+    
+        .home-button {
+            padding: 5px ;
+        }
+    
+        .home-a {
+            padding: 2px ;
+        }
+    
+        .home-img{
+            margin-top: 100px;
+            width: 200px;
+            height: 200px;
+        }
+    
+        .home-icon {
+            *outline: 1px solid blue;
+            margin-top: 200px;
+        }
+    
+        .home-container{
+            flex-direction: column;
+        }
+    
+    
+    
+    
+        /*****about me**********/
+    
+        .about-section {
+            margin-top: 20px;
+        }
+
+        .about-tittle-one{
+            width: 150px;
+        }
+
+        .about-tittle-two{
+            font-size: 2rem;
+        }
+
+        .about-hr{
+            width:180px;
+        }
+
+        .about-p-three {
+            width: 100%;
+        }
+
+        .about-exp {
+            margin-top: 80px;
+        }
+
+        .about-p{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .about-div-p {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        .fondo-color{
+            width: 100px;
+            height: 110px;
+        }
+
+        .about-container {
+            width: 100%;
+            padding-right: 15px;
+        }
+    
+    
+    
+    
+        /***** WHAT I DO SECTION ********/
+    
+        .what-i-do-section {
+            height: 1250px;
+        }
+
+        .i-do-tittle-one{
+            width: 150px;
+        }
+
+        .i-do-tittle-two {
+            font-size: 2rem;
+            width: 70%;
+            margin: auto;
+        }
+
+        .i-do-container {
+            flex-direction: column;
+        }
+
+
+        /***** RESUME SECTION ********/
+    
+        .resume-tittle-one {
+            width: 150px;
+        }
+
+        .resume-tittle-two {
+            font-size: 2rem;
+            margin: auto;
+        }
+
+        .resumes{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /*TODO: no me salió mover esta parte*/
+        .card{
+            display: flex;
+            flex-direction: row;
+            outline: 1px solid blue;
+            height: 300px;
+            width: 300px;
+        }
+
+        .skills{
+            outline: 1px solid rgb(255, 0, 0);
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        /*TODO: no me salió, me quedó mal*/
+        .resume-button {
+            margin-top: 600px;
+        }
+    
+    
+        /****** PORTFOLIO SECTION *********/
+    
+        .resume-tittle-two {
+            font-size: 2rem;
+            margin: auto;
+            width: 100%;
+        }
+    
+    
+        .project-container{
+            padding: 30px 0px;
+            
+        }
+    
+        .project-img-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+    
+    
+        .project-img{
+            width: 250px;
+            height: 190px;
+        }
+    
+    
+         /****** CONTACT SECTION *********/
+    
+        .contact-section{
+            height: 120VH;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .contact-container{
+            display: inline;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-tittle{
+            width: 300px;
+        }
+    
+        .contact-p{
+            width: 400px;
+        }
+    
+        .contact-info{
+            width: 100%;
+            text-align: center;
+            padding-left: 70px;
+        }
+    
+        .contact-ul {
+            text-align: center;
+            padding: 15px 150px;
+        }
+
+        .contact-form {
+            width: 70%;
+            margin: auto;
+        }
+    
+        .contact-tittle-form{
+            width:90%;
+            margin: auto;
+        }
+    
+        .contact-button{
+            width: 33%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+    
+        /******* FOOTER SECTION ********/
+    
+        .footer-section {
+            height: 190px;
+            
+        }
+    
+        .footer-ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .footer-li {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+    
+        .footer-p- {
+            text-align: center;
+        }
+
+
+
+
+
+
+
+@media (min-width: 650px) and (max-width:1200px) {
+        */
+        /****** home ******
+        .home-section{
+            flex-direction: column;
+            height: 100vh;
+            background-color: #212428;
+        }
+    
+        .items{
+            display: none;
+        }
+    
+    
+        .home-text{
+            font-size: 1rem;
+        }
+    
+        .span-text {
+            font-size: 3rem;
+        }
+    
+        .home-tittle{
+            font-size: 1rem;
+        }
+    
+        .home-button {
+            padding: 5px ;
+        }
+    
+        .home-a {
+            padding: 2px ;
+        }
+    
+        .home-img{
+            margin-top: 100px;
+            width: 200px;
+            height: 200px;
+        }
+    
+        .home-icon {
+            *outline: 1px solid blue;
+            margin-top: 200px;
+        }
+    
+        .home-container{
+            flex-direction: column;
+        }
+    
+    
+    
+    
+        /*****about me**********/
+    
+    /*    .about-section {
+            margin-top: 20px;
+        }
+    
+        .about-tittle-one{
+            width: 150px;
+        }
+    
+        .about-tittle-two{
+            font-size: 2rem;
+        }
+    
+        .about-hr{
+            width:180px;
+        }
+    
+        .about-p-three {
+            width: 100%;
+        }
+    
+        .about-exp {
+            margin-top: 80px;
+        }
+    
+    
+        .about-p{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .about-div-p {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        
+        .fondo-color{
+            width: 100px;
+            height: 110px;
+        }
+    
+        .about-container {
+            width: 100%;
+            padding-right: 15px;
+        }
+    
+    
+    
+    
+        /***** WHAT I DO SECTION ********/
+    
+     /*   .what-i-do-section {
+            height: 1250px;
+        }
+    
+        .i-do-tittle-one{
+            width: 150px;
+        }
+    
+    
+        .i-do-tittle-two {
+            font-size: 2rem;
+            width: 70%;
+            margin: auto;
+        }
+    
+    
+        .i-do-container {
+            flex-direction: column;
+        }
+    
+    
+        /***** RESUME SECTION ********/
+    
+    /*    .resume-tittle-one {
+            width: 150px;
+        }
+    
+        .resume-tittle-two {
+            font-size: 2rem;
+            margin: auto;
+        }
+    
+        .resumes{
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        /*TODO: no me salió mover esta parte*/
+     /*   .card{
+            display: flex;
+            flex-direction: row;
+            outline: 1px solid blue;
+            height: 300px;
+            width: 300px;
+        }
+    
+        .skills{
+            outline: 1px solid rgb(255, 0, 0);
+    
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        /*TODO: no me salió, me quedó mal*/
+    /*    .resume-button {
+            margin-top: 1000px;
+        }
+    
+    
+        /****** PORTFOLIO SECTION *********/
+    
+    /*    .resume-tittle-two {
+            font-size: 2rem;
+            margin: auto;
+            width: 100%;
+        }
+    
+    
+        .project-container{
+            padding: 30px 0px;
+    
+        }
+    
+        .project-img-container{
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .project-img{
+            width: 350px;
+            height: 290px;
+        }
+    
+    
+         /****** CONTACT SECTION *********/
+    
+    /*   .contact-section{
+            height: 120VH;
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .contact-tittle{
+            width: 300px;
+        }
+    
+        .contact-p{
+            width: 300px;
+        }
+    
+        .contact-info{
+            width: 100%;
+            text-align: center;
+            padding-left: 70px;
+        }
+    
+        .contact-ul {
+            text-align: center;
+            padding: 15px 120px;
+        }
+    
+        .contact-tittle-form{
+            width: 80%;
+            margin: auto;
+        }
+    
+        .contact-button{
+            width: 33%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+    
+        /******* FOOTER SECTION ********/
+    
+    /*    .footer-section {
+            height: 200px;
+        }
+    
+        .footer-ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .footer-li {
+            text-align: center;
+        }
+    
+        .footer-li- {
+            width: 400px;
+            list-style: none;
+            text-align: center;
+        }
+
+
+
+
+}*/
